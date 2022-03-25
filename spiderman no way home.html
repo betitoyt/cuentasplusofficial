@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- nav -->
+    <div id="nav" class="nav">
+      <img class="nav__logo" src="images/netflix-logo.png" alt="" />
+      <img class="nav__avatar" src="images/avatarplus.PNG" alt="" />
+    </div>
+
+    <!-- header -->
+    <header class="bannerspidermanhome">
+      <div class="banner__contents">
+        <h1 class="banner__title">Spiderman No way Home</h1>
+        <div class="banner__buttons">
+            <a href="index.html"><button class="banner__button">Salir</button></a>
+        </div>
+        <h1 class="banner__description">
+            Tras descubrirse la identidad secreta de Peter Parker como Spider-Man, la vida del joven se vuelve una locura. Peter decide pedirle ayuda al Doctor Extraño para recuperar su vida. Pero algo sale mal y provoca una fractura en el multiverso.
+        </h1>
+      </div>
+      <div class="banner--fadeBottom"></div>
+    </header>
+
+        <iframe width="1900" height="600" frameborder="0" src="" allowfullscreen ></iframe>
+
+
+    <script>
+      const nav = document.getElementById('nav');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY >= 100) {
+          nav.classList.add('nav__black');
+        } else {
+          nav.classList.remove('nav__black');
+        }
+      });
+    </script>
+  </body>
+</html>

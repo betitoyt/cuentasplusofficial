@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- nav -->
+    <div id="nav" class="nav">
+      <img class="nav__logo" src="images/netflix-logo.png" alt="" />
+      <img class="nav__avatar" src="images/avatarplus.PNG" alt="" />
+    </div>
+
+    <!-- header -->
+    <header class="bannerchucky">
+      <div class="banner__contents">
+        <h1 class="banner__title">No Disponible</h1>
+        <div class="banner__buttons">
+            <a href="chuckytemp.html"><button class="banner__button">Regresar</button></a>
+            <a href="index.html"><button class="banner__button">Salir</button></a>
+        </div>
+        <h1 class="banner__description">
+         Puede ser Por mantenimiento o por que se estan actualizando la Temporada  </h1>
+      </div>
+      <div class="banner--fadeBottom"></div>
+    </header>
+
+    <script>
+      const nav = document.getElementById('nav');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY >= 100) {
+          nav.classList.add('nav__black');
+        } else {
+          nav.classList.remove('nav__black');
+        }
+      });
+    </script>
+  </body>
+</html>

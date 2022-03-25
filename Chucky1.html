@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- nav -->
+    <div id="nav" class="nav">
+      <img class="nav__logo" src="images/netflix-logo.png" alt="" />
+      <img class="nav__avatar" src="images/avatarplus.PNG" alt="" />
+    </div>
+
+    <!-- header -->
+    <header class="bannerchucky">
+      <div class="banner__contents">
+        <h1 class="banner__title">Chucky la Serie</h1>
+        <div class="banner__buttons">
+            <a href="chuckytemp.html"><button class="banner__button">Regresar</button></a>
+            <a href="index.html"><button class="banner__button">Salir</button></a>
+        </div>
+        <h1 class="banner__description">
+            Después de que un muñeco vintage de Chucky aparece en una venta de patio suburbana, una ciudad estadounidense se ve sumida en el caos, luego de que una serie de crímenes horribles comienzan a exponer las hipocresías y los secretos de la ciudad.
+
+            Mientras tanto, la llegada de enemigos y aliados del pasado de Chucky amenaza con exponer la verdad detrás de los acontecimientos así como los orígenes no contados del malvado muñeco.
+        </h1>
+      </div>
+      <div class="banner--fadeBottom"></div>
+    </header>
+
+        <iframe width="1900" height="600" frameborder="0" src="https://mega.nz/embed/IR8whLLZ#Qukw6wJMWlo__B93MoE-Wy0tcNCBQZ5g9-TYWOwkRCk" allowfullscreen ></iframe>
+
+
+    <script>
+      const nav = document.getElementById('nav');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY >= 100) {
+          nav.classList.add('nav__black');
+        } else {
+          nav.classList.remove('nav__black');
+        }
+      });
+    </script>
+  </body>
+</html>
